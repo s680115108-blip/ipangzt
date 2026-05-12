@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา | Flower Gallery</title>
+
+    <style>
+        :root {
+            --primary-pink: #ff8fb1;
+            --dark-pink: #ff4f87;
+            --soft-bg: #fff5f7;
+            --text-color: #4a4a4a;
+        }
+
+        body { margin:0; font-family: Arial; background:#fff5f7; }
+        header { background:#ff8fb1; color:white; padding:20px; text-align:center; }
+        nav { background:white; text-align:center; padding:15px; }
+        nav a { text-decoration:none; color:#ff4f87; margin:15px; font-weight:bold; }
+
+        header {
+            background: var(--primary-pink);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        /* ปรับปรุง Container ของฟอร์ม */
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        form {
+            background: white;
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(255, 143, 177, 0.2); /* เงาสีชมพูอ่อนๆ */
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: var(--dark-pink);
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-top: 8px;
+            padding: 12px;
+            border: 1px solid #ffe0e9;
+            border-radius: 10px;
+            box-sizing: border-box; /* ป้องกัน Input ล้นกรอบ */
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        /* เอฟเฟกต์เมื่อคลิกที่ช่องกรอก */
+        input:focus, textarea:focus {
+            border-color: var(--primary-pink);
+            box-shadow: 0 0 8px rgba(255, 143, 177, 0.3);
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical; /* ให้ยืดขยายแนวตั้งได้เท่านั้น */
+        }
+
+        button {
+            background: var(--dark-pink);
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        button:hover {
+            background: #e63e75;
+            transform: translateY(-2px); /* ปุ่มลอยขึ้นเมื่อชี้ */
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Talk to Our Florist</h1>
+    <p style="margin-top: 10px; opacity: 0.9;">ส่งข้อความหาเรา แล้วเราจะติดต่อกลับโดยเร็วที่สุด</p>
+</header>
+
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="flowers.html">สินค้า</a>
+    <a href="about.html">เกี่ยวกับเรา</a>
+    <a href="gallery.html">แกลเลอรี่</a>
+    <a href="contact.html">ติดต่อ</a>
+</nav>
+
+<div class="container">
+    <form action="#">
+        <label>ชื่อ-นามสกุล</label>
+        <input type="text" placeholder="ระบุชื่อของคุณ" required>
+
+        <label>อีเมล</label>
+        <input type="email" placeholder="example@email.com" required>
+
+        <label>ข้อความถึงเรา</label>
+        <textarea placeholder="พิมพ์ข้อความที่นี่..."></textarea>
+
+        <button type="submit">ส่งข้อความ</button>
+    </form>
+</div>
+
+</body>
+</html>

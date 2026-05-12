@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สินค้า - Bloom Flower Shop</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #fff5f7;
+        margin: 0;
+    }
+
+    header {
+        background: #ff8fb1;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* เพิ่มสไตล์เมนูนำทางให้เหมือนหน้าแรก */
+    nav {
+        background: white;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #ff4f87;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+
+    .card {
+        background: white;
+        width: 250px;
+        border-radius: 15px;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* เพิ่มเงาให้ดูมีมิติ */
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px); /* เอฟเฟกต์ลอยขึ้นเมื่อเอาเมาส์วาง */
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px; /* กำหนดความสูงคงที่เพื่อให้การ์ดเท่ากัน */
+        object-fit: cover; /* ป้องกันภาพเบี้ยว */
+        border-radius: 10px;
+    }
+
+    .card h3 {
+        color: #333;
+        margin: 15px 0 5px;
+    }
+
+    .card p {
+        color: #ff4f87;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    /* เพิ่มปุ่มสั่งซื้อ */
+    .btn-buy {
+        background: #ff4f87;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+
+    .btn-buy:hover {
+        background: #e64478;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bloom Flower Shop</h1>
+</header>
+
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="flowers.html">สินค้า</a>
+    <a href="about.html">เกี่ยวกับเรา</a>
+    <a href="gallery.html">แกลเลอรี่</a>
+    <a href="contact.html">ติดต่อ</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <img src="ช่อกุหลาบ.jpg" alt="กุหลาบแดง">
+        <h3>กุหลาบแดง</h3>
+        <p>ราคา 499 บาท</p>
+        <button class="btn-buy">ใส่รถเข็น</button>
+    </div>
+	
+	<div class="card">
+        <img src="ช่อกุหลาบขาว.jfif" alt="กุหลาบขาว">
+        <h3>ช่อกุหลาบขาว</h3>
+        <p>ราคา 499 บาท</p>
+        <button class="btn-buy">ใส่รถเข็น</button>
+	</div>
+
+    <div class="card">
+        <img src="ช่อทานตะวัน.jpg" alt="ทานตะวัน">
+        <h3>ช่อทานตะวัน</h3>
+        <p>ราคา 299 บาท</p>
+        <button class="btn-buy">ใส่รถเข็น</button>
+	</div>
+	
+	<div class="card">
+        <img src="ช่อทิวลิป.jpg" alt="ทิวลิป">
+        <h3>ช่อทิวลิป</h3>
+        <p>ราคา 399 บาท</p>
+        <button class="btn-buy">ใส่รถเข็น</button>
+	</div>
+	
+	<div class="card">
+        <img src="ช่อยิปโซ.jpg" alt="ยิปโซ">
+        <h3>ช่อยิปโซ</h3>
+        <p>ราคา 299 บาท</p>
+        <button class="btn-buy">ใส่รถเข็น</button>
+	</div>
+	
+	<div class="card">
+        <img src="ช่อไฮเดนเยีย.jpg" alt="ไฮเดนเยีย">
+        <h3>ช่อไฮเดนเยีย</h3>
+        <p>ราคา 399 บาท</p>
+        <button class="btn-buy">ใส่รถเข็น</button>
+	</div>
+	
+	<div class="card">
+        <img src="ช่อลิลลี่.jpg" alt="ลิลลี่">
+        <h3>ลิลลี่</h3>
+        <p>ราคา 499 บาท</p>
+        <button class="btn-buy">ใส่รถเข็น</button>
+	</div>
+	

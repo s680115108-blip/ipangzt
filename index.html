@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flower Gallery</title>
+
+<style>
+
+  body {
+        font-family: Arial, sans-serif;
+        background: #fff5f7;
+        margin: 0;
+        color: #444;
+    }
+
+    header {
+        background: #ff8fb1;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* เมนูนำทางให้เหมือนหน้าอื่นๆ */
+    nav {
+        background: white;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #ff4f87;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+.gallery .card{
+    background:white;
+    padding:12px;
+    border-radius:15px;
+}
+
+.gallery .card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bloom Flower Shop</h1>
+</header>
+
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="flowers.html">สินค้า</a>
+    <a href="about.html">เกี่ยวกับเรา</a>
+    <a href="gallery.html">แกลเลอรี่</a>
+    <a href="contact.html">ติดต่อ</a>
+</nav>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="ดอกกุหลาบแดง.jpg">
+        <h3>ดอกกุหลาบแดง</h3>
+        <p>ความรัก โรแมนติก</p>
+    </div>
+
+    <div class="card">
+        <img src="ดอกกุหลาบขาว.jpg">
+        <h3>ดอกกุหลาบขาว</h3>
+        <p>ความเรียบง่าย อบอุ่น</p>
+    </div>
+
+    <div class="card">
+        <img src="ดอกทานตะวัน.jpg">
+        <h3>ดอกทานตะวัน</h3>
+        <p>ความอบอุ่น ยั่งยืน</p>
+    </div>
+
+    <div class="card">
+        <img src="ดอกทิวลิป.jpg">
+        <h3>ดอกทิวลิป</h3>
+        <p>ความสง่างาม รักที่สมบูรณ์</p>
+    </div>
+
+    <div class="card">
+        <img src="ดอกยิปโซ.jpg">
+        <h3>ดอกยิปโซ</h3>
+        <p>ความรักที่ยาวนาน รักนิรันดร์</p>
+    </div>
+
+    <div class="card">
+        <img src="ดอกลาเวนเดอร์.jpg">
+        <h3>ดอกลาเวนเดอร์</h3>
+        <p>ความซื่อสัตย์ ให้เกียรติ</p>
+    </div>
+	
+	<div class="card">
+        <img src="ดอกลิลลี่.jfif">
+        <h3>ดอกลิลลี่</h3>
+        <p>ความบริสุทธิ์ ไร้เดียงสา</p>
+    </div>
+	
+	<div class="card">
+        <img src="ดอกไฮเดนเยีย.jpg">
+        <h3>ดอกไฮเดนเยีย</h3>
+        <p>ความจริงใจ เข้าใจ</p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+ 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แกลเลอรี่ดอกไม้</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #fff5f7;
+        margin: 0;
+        color: #444;
+    }
+
+    header {
+        background: #ff8fb1;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* เมนูนำทางให้เหมือนหน้าอื่นๆ */
+    nav {
+        background: white;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #ff4f87;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    .gallery {
+        display: grid;
+        /* ปรับให้รองรับ Responsive: แถวละ 1 รูปในมือถือ, 2 ในแท็บเล็ต, 3 ในคอม */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .gallery-item {
+        overflow: hidden;
+        border-radius: 20px;
+        background: white;
+        box-shadow: var(--card-shadow);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .gallery-item:hover {
+        transform: translateY(-10px); /* ลอยขึ้นเมื่อเอาเมาส์ชี้ */
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 300px; /* กำหนดความสูงให้เท่ากันทุกรูป */
+        object-fit: cover; /* บังคับให้รูปเต็มกรอบโดยไม่อัตราส่วนเสีย */
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1); /* ซูมรูปเล็กน้อยในกรอบ */
+    }
+
+    /* เพิ่มแคปชั่นเล็กๆ ใต้ภาพ (ถ้าต้องการ) */
+    .caption {
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        color: #ff6b95;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1>The Flower Gallery</h1>
+</header>
+
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="flowers.html">สินค้า</a>
+    <a href="about.html">เกี่ยวกับเรา</a>
+    <a href="gallery.html">แกลเลอรี่</a>
+    <a href="contact.html">ติดต่อ</a>
+</nav>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="กุหลาบ.jpg" alt="Flower 1">
+        <div class="caption">Beautiful Bloom</div>
+    </div>
+    <div class="gallery-item">
+        <img src="ทิวลิป.jpg" alt="Flower 2">
+        <div class="caption">Sweet Petal</div>
+    </div>
+    <div class="gallery-item">
+        <img src="กุหลาบแดง.jpg" alt="Flower 3">
+        <div class="caption">Morning Rose</div>
+    </div>
+    <div class="gallery-item">
+        <img src="ทานตะวัน.jpg" alt="Flower 4">
+        <div class="caption">Sun Kissed</div>
+    </div>
+    <div class="gallery-item">
+        <img src="ซากุระ.jpg" alt="Flower 5">
+        <div class="caption">Pink Blossom</div>
+    </div>
+    <div class="gallery-item">
+        <img src="ลาเวนเดอร์.jpg"alt="Flower 6">
+        <div class="caption">Soft Lavender</div>
+    </div>
+</div>
+
+</body>
+</html>
